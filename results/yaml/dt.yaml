@@ -1,0 +1,17 @@
+# decision_tree.yaml
+search_space:
+  max_depth:
+    type: Integer
+    low: 2
+    high: 20
+  min_samples_split:
+    type: Integer
+    low: 2
+    high: 20
+  min_samples_leaf:
+    type: Integer
+    low: 1
+    high: 20
+  max_features:
+    type: Categorical
+    categories: [null, 'sqrt', 'log2']

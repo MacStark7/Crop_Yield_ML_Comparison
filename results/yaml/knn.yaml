@@ -1,0 +1,13 @@
+# knn.yaml
+search_space:
+  n_neighbors:
+    type: Integer
+    low: 1
+    high: 9
+  weights:
+    type: Categorical
+    categories: ['uniform', 'distance']
+  p:
+    type: Integer
+    low: 1
+    high: 2

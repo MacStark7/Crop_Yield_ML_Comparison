@@ -1,0 +1,18 @@
+# random_forest.yaml
+search_space:
+  n_estimators:
+    type: Integer
+    low: 50
+    high: 200
+  max_depth:
+    type: Integer
+    low: 2
+    high: 30
+  min_samples_split:
+    type: Integer
+    low: 2
+    high: 20
+  min_samples_leaf:
+    type: Integer
+    low: 1
+    high: 10

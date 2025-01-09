@@ -1,0 +1,33 @@
+# svm.yaml
+search_space:
+  - C:
+      type: Real
+      low: 0.1
+      high: 150
+      prior: log-uniform
+    gamma:
+      type: Real
+      low: 0.00001
+      high: 1
+      prior: log-uniform
+    kernel:
+      type: Categorical
+      categories: ['rbf', 'sigmoid']
+
+  - C:
+      type: Real
+      low: 0.1
+      high: 100
+      prior: log-uniform
+    gamma:
+      type: Real
+      low: 0.00001
+      high: 1
+      prior: log-uniform
+    kernel:
+      type: Categorical
+      categories: ['poly']
+    degree:
+      type: Integer
+      low: 3
+      high: 5

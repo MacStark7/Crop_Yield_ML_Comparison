@@ -1,0 +1,23 @@
+# gradient_boosting.yaml
+search_space:
+  n_estimators:
+    type: Integer
+    low: 50
+    high: 200
+  max_depth:
+    type: Integer
+    low: 2
+    high: 10
+  min_samples_split:
+    type: Integer
+    low: 2
+    high: 20
+  min_samples_leaf:
+    type: Integer
+    low: 1
+    high: 8
+  learning_rate:
+    type: Real
+    low: 0.001
+    high: 0.2
+    prior: log-uniform
